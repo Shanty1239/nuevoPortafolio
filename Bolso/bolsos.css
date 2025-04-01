@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.head img {
+  width: 20px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.head h1 {
+  font-size: 40px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.pag1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 80px 50px;
+  background-color: rgb(246, 246, 246);
+  min-height: 90vh;
+  overflow: auto;
+  margin-top: -5%;
+  
+}
+
+.texto {
+  flex: 1;
+  padding-right: 50px;
+  max-width: 500px;
+}
+
+.texto h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.texto a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Gafas {
+  flex: 1;
+  display: flex;
+  background-color: rgb(246, 246, 246);
+  flex-direction: column;
+  /* Asegura que la imagen y el texto estén en columna */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* Espacio entre la imagen y el texto */
+
+}
+
+.Gafas img {
+  max-width: 500px;
+  /* Ajustado para ocupar más espacio */
+  height: auto;
+  object-fit: cover;
+  margin-top: -10%;
+
+
+}
+
+.Gafas p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  /* Ajusta el valor negativo para subirlo */
+  padding-left: 50%;
+}
+
+
+.pag2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden mejor */
+  justify-content: center; /* Centra los elementos */
+  align-items: center;
+  padding: 20px;
+  background-color:white;
+  text-align: center;
+}
+
+.pag2 p,
+h4 {
+  margin-left: 2%;
+  margin-top: 20px;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.pag3 {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 5%;
+  background-color:white;
+}
+
+
+
+.card {
+  background-color: rgb(246, 246, 246);;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+
+}
+.txt {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+
+.txt h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .txt h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: -15px;
+    margin-right: 50px;
+
+
+
+
+  }
+
+.card p {
+  padding-left: 15px;
+  text-align: left;
+  color: grey;
+  margin-bottom: 10%;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+
+}
+
+
+.pieP {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.pieP h5 {
+  margin: 0;
+  text-align: left;
+}
+
+
+.enlaces {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; 
+  gap: 15px; 
+}
+
+
+.pieP a {
+  text-decoration: none;
+  color: rgb(55, 55, 234);
+  font-weight: bold;
+}
+
+.redes a {
+  background: linear-gradient(to right, #A74099, #B8387F,#CE305B,#D82B4D,#DC2A41,#F0402B,#F3672A,#F68A2B,#FBBE28);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  font-weight: bold;
+
+}
