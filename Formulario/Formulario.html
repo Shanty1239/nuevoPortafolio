@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Formulario.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <div class="pag1">
     <img src="https://static.vecteezy.com/system/resources/previews/020/975/553/non_2x/steam-logo-steam-icon-transparent-free-png.png" alt="">
         <h1>REGISTRARSE</h1>
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-        <input type="number" name="" id="">
-        <select name="Tipo de Identificacion">
+        <form id="registro">
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Apellido" id="apellido">
+        <input type="number" placeholder="Telefono" id="telefono">
+        <select id="identificacion">
 
             <option>Targeta de Identidad</option>
 
@@ -24,9 +26,9 @@
             <option>Extranjera</option>
 
         </select>
-        <input type="text" name="" id="">
-        <input type="email" name="" id="">
-        <input type="date" name="" id="">
+        <input type="text" placeholder="Numero de documento"  id="n_documento">
+        <input type="email" placeholder="Correo electronico" id="c_electronico">
+        <input type="date"  id="f_nacimiento">
         <h3>Genero</h3>
         <input type="radio" name="transporte2" value="" checked>
         Mujer
@@ -35,8 +37,10 @@
         <input type="radio" name="transporte2" value="" checked>
         Otros
         <button> ENVIAR</button>
-
+    </form>
     </div>
+
+    <script src="Formulario.js"></script>
 </body>
 
 </html>
