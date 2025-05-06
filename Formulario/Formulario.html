@@ -1,46 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Formulario.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Tabla</title>
+  <link rel="stylesheet" href="Formulario.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-
 <body>
-    <div class="pag1">
+
+  <div class="pag1">
     <img src="https://static.vecteezy.com/system/resources/previews/020/975/553/non_2x/steam-logo-steam-icon-transparent-free-png.png" alt="">
-        <h1>REGISTRARSE</h1>
-        <form id="registro">
-        <input type="text" placeholder="Nombre" id="nombre">
-        <input type="text" placeholder="Apellido" id="apellido">
-        <input type="number" placeholder="Telefono" id="telefono">
-        <select id="identificacion">
+    <h1>REGISTRARSE</h1>
 
-            <option>Targeta de Identidad</option>
+    <form id="registro">
+      <input type="text" placeholder="Nombre" id="nombre">
+      <input type="text" placeholder="Apellido" id="apellido">
+      <input type="number" placeholder="Teléfono" id="telefono">
 
-            <option>Cedula Ciudadana</option>
+      <select id="identificacion">
+        <option disabled selected>Selecciona una opción...</option>
+        <option>Tarjeta de Identidad</option>
+        <option>Cédula Ciudadana</option>
+        <option>Extranjera</option>
+      </select>
 
-            <option>Extranjera</option>
+      <input type="text" placeholder="Número de documento" id="n_documento">
+      <input type="email" placeholder="Correo electrónico" id="c_electronico">
+      <input type="date" id="f_nacimiento">
 
-        </select>
-        <input type="text" placeholder="Numero de documento"  id="n_documento">
-        <input type="email" placeholder="Correo electronico" id="c_electronico">
-        <input type="date"  id="f_nacimiento">
-        <h3>Genero</h3>
-        <input type="radio" name="transporte2" value="" checked>
-        Mujer
-        <input type="radio" name="transporte2" value="" checked>
-        Hombre
-        <input type="radio" name="transporte2" value="" checked>
-        Otros
-        <button> ENVIAR</button>
+      <h3>Género</h3>
+      <div class="genero">
+        <label><input type="radio" name="genero" value="Mujer"> Mujer</label>
+        <label><input type="radio" name="genero" value="Hombre"> Hombre</label>
+        <label><input type="radio" name="genero" value="Otros"> Otros</label>
+      </div>
+
+      <button type="submit">ENVIAR</button>
     </form>
-    </div>
+  </div>
 
-    <script src="Formulario.js"></script>
+  <div class="tabla">
+    <h2>Registros</h2>
+    <table id="tabla_datos">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Teléfono</th>
+          <th>Tipo Documento</th>
+          <th>Número Documento</th>
+          <th>Correo</th>
+          <th>Fecha Nacimiento</th>
+          <th>Género</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas se agregan aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="Formulario.js"></script>
 </body>
-
 </html>

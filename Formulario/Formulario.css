@@ -3,84 +3,145 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    animation: gradient 5s ease infinite;
-    background: linear-gradient(-50deg, rgb(17, 25, 48) ,#061840, #0A214F, #153461,#2A6EA0,#0A6AA2);
+    background: linear-gradient(-50deg, rgb(17, 25, 48), #061840, #0A214F, #153461, #2A6EA0, #0A6AA2);
     background-size: 400% 400%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-.pag1 {
+    animation: gradient 5s ease infinite;
+    min-height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .pag1 {
     background-color: white;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-}
-
-.pag1 img {
+    margin-top: 30px;
+  }
+  
+  .pag1 img {
     width: 90px;
     height: 90px;
-    object-fit: contain;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="date"],
-select {
-    width: 100%;
+  }
+  
+  input, select {
+    width: 100%; /* Esto asegura que el ancho sea igual */
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-sizing: border-box;
-    }
-
-
-h3 {
-    margin-bottom: 5px;
+    box-sizing: border-box; 
+  }
+  
+  h3 {
+    margin-bottom: 10%;
     color: #333;
-}
+    text-align: left;
+  }
 
-input[type="radio"] {
+
+  .genero {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 15px;
+  }
+
+  
+  .genero label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  input[type="radio"] {
     margin-right: 5px;
-    margin-left: 10px;
-}
-
-button {
+  }
+  
+  button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, rgb(17, 25, 48) ,#061840, #0A214F, #153461,#2A6EA0,#0A6AA2);
+    background: linear-gradient(to right, rgb(17, 25, 48), #0A6AA2);
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 15px;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background: linear-gradient(to right, #2A6EA0, #0A6AA2, #111930);
     transform: scale(1.03);
-}
+  }
+  .tabla {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;  /* Hace que las líneas de las celdas se fusionen en una sola línea */
+    min-width: 800px;
+    background-color: #f5f5f5;  /* Fondo de la tabla */
+  }
+  
+  th, td {
+    padding: 12px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;  /* Asegura que el texto no se recorte */
+    overflow: visible;  /* Hace que el contenido se muestre completo */
+    text-overflow: clip;  /* Desactiva el recorte con puntos suspensivos */
+    border: 1px solid #ddd;  /* Líneas de separación entre celdas */
+  }
+  
+  th {
+    background-color: #0A214F;  /* Azul para el encabezado */
+    color: white;
+    font-weight: bold;
+  }
+  
+  td button {
+    margin: 2px;
+    padding: 6px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0A6AA2;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  td button:hover {
+    background-color: #0A214F;
+  }
+  
+  td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px;
+    white-space: nowrap;
+  }
+  
+  td:last-child button {
+    flex: 1;
+    min-width: 70px;
+    max-width: 80px;
+  }
+  
