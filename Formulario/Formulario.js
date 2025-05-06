@@ -84,7 +84,7 @@ function editarRegistro(id) {
   const registro = registros.find(r => r.item === id);
   if (!registro) return;
 
-  // Rellenar el formulario con los datos
+  
   document.getElementById('nombre').value = registro.nombres;
   document.getElementById('apellido').value = registro.apellidos;
   document.getElementById('telefono').value = registro.telefono;
@@ -94,7 +94,7 @@ function editarRegistro(id) {
   document.getElementById('f_nacimiento').value = registro.fechaNacimiento;
   document.querySelector(`input[name="genero"][value="${registro.genero}"]`).checked = true;
 
-  // Eliminar el registro actual
+ 
   eliminarRegistro(id);
 }
 

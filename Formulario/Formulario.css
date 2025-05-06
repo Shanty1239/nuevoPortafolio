@@ -93,9 +93,9 @@ body {
   
   table {
     width: 100%;
-    border-collapse: collapse;  /* Hace que las líneas de las celdas se fusionen en una sola línea */
+    border-collapse: collapse;  
     min-width: 800px;
-    background-color: #f5f5f5;  /* Fondo de la tabla */
+    background-color: #f5f5f5;  
   }
   
   th, td {
@@ -103,14 +103,14 @@ body {
     font-size: 13px;
     text-align: center;
     vertical-align: middle;
-    white-space: normal;  /* Asegura que el texto no se recorte */
-    overflow: visible;  /* Hace que el contenido se muestre completo */
-    text-overflow: clip;  /* Desactiva el recorte con puntos suspensivos */
-    border: 1px solid #ddd;  /* Líneas de separación entre celdas */
+    white-space: normal;  
+    overflow: visible;  
+    text-overflow: clip;  
+    border: 1px solid #ddd;  
   }
   
   th {
-    background-color: #0A214F;  /* Azul para el encabezado */
+    background-color: #0A214F;  
     color: white;
     font-weight: bold;
   }
@@ -135,7 +135,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 6px;
-    padding: 6px;
+    padding: 12px;
     white-space: nowrap;
   }
   
