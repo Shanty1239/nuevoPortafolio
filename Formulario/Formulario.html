@@ -38,29 +38,38 @@
 
       <button type="submit">ENVIAR</button>
     </form>
+
+    <!-- Botón para abrir el modal -->
+    <button id="verRegistros">VER REGISTROS</button>
   </div>
 
-  <div class="tabla">
-    <h2>Registros</h2>
-    <table id="tabla_datos">
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Teléfono</th>
-          <th>Tipo Documento</th>
-          <th>Número Documento</th>
-          <th>Correo</th>
-          <th>Fecha Nacimiento</th>
-          <th>Género</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-       
-      </tbody>
-    </table>
+  <!-- Modal con la tabla -->
+  <div class="modal" id="modalTabla">
+    <div class="modal-contenido">
+      <span class="cerrar" id="cerrarModal">&times;</span>
+      <div class="tabla">
+        <h2>Registros</h2>
+        <table id="tabla_datos">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Teléfono</th>
+              <th>Tipo Documento</th>
+              <th>Número Documento</th>
+              <th>Correo</th>
+              <th>Fecha Nacimiento</th>
+              <th>Género</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas se agregan aquí -->
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <script src="Formulario.js"></script>

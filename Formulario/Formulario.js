@@ -84,7 +84,6 @@ function editarRegistro(id) {
   const registro = registros.find(r => r.item === id);
   if (!registro) return;
 
-  
   document.getElementById('nombre').value = registro.nombres;
   document.getElementById('apellido').value = registro.apellidos;
   document.getElementById('telefono').value = registro.telefono;
@@ -94,8 +93,30 @@ function editarRegistro(id) {
   document.getElementById('f_nacimiento').value = registro.fechaNacimiento;
   document.querySelector(`input[name="genero"][value="${registro.genero}"]`).checked = true;
 
- 
   eliminarRegistro(id);
+
+  // Opcional: cerrar el modal al editar
+  document.getElementById('modalTabla').style.display = 'none';
 }
+
+// ===== Modal lógica =====
+const modal = document.getElementById('modalTabla');
+const btnAbrir = document.getElementById('verRegistros');
+const btnCerrar = document.getElementById('cerrarModal');
+
+btnAbrir.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+btnCerrar.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
 
 
