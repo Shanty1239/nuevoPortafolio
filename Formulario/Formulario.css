@@ -33,7 +33,7 @@ body {
   }
   
   input, select {
-    width: 100%; /* Esto asegura que el ancho sea igual */
+    width: 100%; 
     padding: 10px;
     margin-bottom: 8px;
     border: 1px solid #ccc;
@@ -93,9 +93,9 @@ body {
   
   table {
     width: 100%;
-    border-collapse: collapse;  /* Hace que las líneas de las celdas se fusionen en una sola línea */
+    border-collapse: collapse;  
     min-width: 800px;
-    background-color: #f5f5f5;  /* Fondo de la tabla */
+    background-color: #f5f5f5;  
   }
   
   th, td {
@@ -103,14 +103,14 @@ body {
     font-size: 13px;
     text-align: center;
     vertical-align: middle;
-    white-space: normal;  /* Asegura que el texto no se recorte */
-    overflow: visible;  /* Hace que el contenido se muestre completo */
-    text-overflow: clip;  /* Desactiva el recorte con puntos suspensivos */
-    border: 1px solid #ddd;  /* Líneas de separación entre celdas */
+    white-space: normal;  
+    overflow: visible;  
+    text-overflow: clip;  
+    border: 1px solid #ddd;
   }
   
   th {
-    background-color: #0A214F;  /* Azul para el encabezado */
+    background-color: #0A214F;  
     color: white;
     font-weight: bold;
   }
@@ -158,7 +158,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Contenedor del contenido del modal */
+
 .modal-contenido {
   background-color: #fff;
   margin: 5% auto;
@@ -170,13 +170,13 @@ body {
   position: relative;
 }
 
-/* Animación para entrada */
+
 @keyframes aparecer {
   from { transform: translateY(-30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Botón de cierre (X) */
+
 .cerrar {
   position: absolute;
   top: 10px;
@@ -187,7 +187,7 @@ body {
   cursor: pointer;
 }
 
-/* Botón VER REGISTROS */
+
 #verRegistros {
   margin-top: 20px;
   padding: 10px 20px;
