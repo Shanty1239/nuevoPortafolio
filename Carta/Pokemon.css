@@ -1,12 +1,21 @@
-.charizard{
-  height: 100vh;
-  width: 100vw;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.charizard {
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cad4b52e-f6b1-432f-9035-a5f4853bcf15/d84o6a9-28125268-b60b-4752-a665-acf6b32fbe37.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NhZDRiNTJlLWY2YjEtNDMyZi05MDM1LWE1ZjQ4NTNiY2YxNVwvZDg0bzZhOS0yODEyNTI2OC1iNjBiLTQ3NTItYTY2NS1hY2Y2YjMyZmJlMzcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.E8Cz0zggZe_qb5KHtrjPAJJTDCl3YQ7K7GUvLtOBrbg');
+  background-size: cover;              /* Hace que la imagen cubra todo */
+  background-position: center;         /* Centra la imagen */
   
 }
-
 .perspective{
   perspective: 1000px;
 }
@@ -111,7 +120,7 @@
 .nombre{
   position: absolute;
   z-index: 3;
-  bottom: 91%;  
+  bottom: 93%;  
   margin-left: 17%;
 }
 
@@ -128,7 +137,7 @@
 .nivel{
   position: absolute;
   z-index: 3;
-  bottom: 87%;   
+  bottom: 93%;   
   margin-left: 45%;
 }
 
@@ -141,13 +150,10 @@
   color: darkred;
  
 }
-
-
-
 .power{
   position: absolute;
   z-index: 3;
-  bottom: 87%;  
+  bottom: 93%;  
   margin-left: 58%;
 }
 
@@ -160,13 +166,10 @@
   color: darkred;
  
 }
-
-
-
 .altura {
   position: absolute;
   z-index: 3;
-  bottom: 87%;   
+  bottom: 93%;   
   margin-left: 75%;
 }
 
@@ -211,7 +214,7 @@
   .Habilidad{
     position: absolute;
     z-index: 3;
-    bottom: 25%;   
+    bottom: 30%;   
     margin-left: 7%;
     font-size: 20px;   
     font-family: 'Bangers', cursive;

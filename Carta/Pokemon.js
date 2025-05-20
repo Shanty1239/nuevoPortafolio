@@ -20,7 +20,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
       `url(${data.sprites.front_default})`;
 
    
-    document.getElementById("pokemon-level").textContent = `Nv. ${Math.floor(Math.random() * 100) + 1}`;
+    document.getElementById("ID").textContent = `#${data.id}`;
 
     
     const power = data.stats.find(stat => stat.stat.name === "attack");
