@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VETERINARIA</title>
+    <link rel="stylesheet" href="vet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/25583.png" alt="" />
+        <h1>VETERINARIA</h1>
+        <button onclick="abrirModal()" id="registrar">VER REGISTROS</button>
+    </div>
+    <div class="modal" id="modalTabla">
+        <div class="modal-contenido">
+            <button onclick="cerrarModal()" id="cerrar-modal" style="position: absolute; top: 10px; right: 10px;">X</button>
+            <div class="formulario">
+                <img id="imagenmascota" src="" alt="Imagen de la mascota" style="width: 200px; display: none; margin: auto;" />
+                <input type="text" id="nombre" placeholder="Nombre de la mascota" />
+                <input type="text" id="dueno" placeholder="Propietario" />
+                <input type="text" id="tel" placeholder="Telefono" />
+                <input type="datetime-local" id="fecha-hora" placeholder="Fecha-Hora" />
+                <input type="text" id="dolor" placeholder="Síntomas" /> 
+                <select id="tipo" onchange="imagen()">
+                    <option value="" disabled selected>Seleccione el tipo de mascota...</option>
+                    <option value="perros">Perros</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="peces">Peces</option>
+                    <option value="pajaros">Pájaros</option>
+                    <option value="hamsters">Hamsters</option>
+                    <option value="conejos">Conejos</option>
+                    <option value="tortugas">Tortugas</option>
+                    <option value="lagartos">Lagartos</option>
+                    <option value="serpientes">Serpientes</option>
+                </select>
+                 
+                 <label for="estado" id="estado-label" style="display:none;">Estado:</label>
+                 <select id="estado" style="display:none;">
+                     <option value="abierta">Abierta</option>
+                     <option value="terminada">Terminada </option>
+                     <option value="cancelada">Cancelada</option>
+                 </select>
+                <button onclick="guardarcita()" id="registrar">Guardar cita</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="citas">
+        <input type="text" id="buscador" placeholder="Buscar por mascota..." onkeyup="filtrarPorNombre()">
+        <select id="filtroEstado" onchange="pintarTarjetas()">
+            <option value="">Filtrar por estado...</option>
+            <option value="abierta">Abierta</option>
+            <option value="terminada">Terminada</option>
+            <option value="cancelada">Cancelada</option>
+        </select>
+        <div id="card" class="card-container"></div>
+    </div>
+
+    <script src="vet.js"></script>
+</body>
+
+</html>

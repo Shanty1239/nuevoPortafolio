@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+
+
+
+
+.head {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 96%;
+  background-color: #DDE7F1;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.head img {
+  width: 70px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.head h1 {
+  font-size: 40px;
+  text-align: center;
+  flex-grow: 1;
+  background: linear-gradient(to right,  #2094b1, #104964);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  font-weight: bold;
+
+}
+
+
+.head button{
+  background: linear-gradient(to right, #2094b1,#8cb8e7);
+  color: white  ;
+  margin-right: 10px;
+  border: none;     
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.formulario {
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+}
+
+.formulario select {
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.formulario button {
+  background: linear-gradient(to right, #2094b1,#8cb8e7);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background: linear-gradient(to right, #2094b1,#8cb8e7);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Estilo para el contenedor del formulario de búsqueda */
+.citas {
+  
+  margin: 10px;
+  align-items: center;
+;
+  padding: 20px 40px;
+  background-color: #DDE7F1;
+  margin-top: 10rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+}
+
+/* Estilo para el input y el select */
+.citas input,
+.citas select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.citas input {
+  width: 200px;
+}
+
+.citas select {
+  width: 180px;
+}
+
+/* Estilo para el contenedor de las cartas */
+.card-container {
+  display: flex;            /* Usamos flexbox para que las tarjetas se alineen horizontalmente */
+  flex-wrap: wrap;          /* Permite que las tarjetas se envuelvan cuando no haya más espacio */
+  gap: 1rem;                /* Espacio entre las tarjetas */
+  justify-content: flex-start; 
+  margin-top: 2rem;         
+}
+
+/* Estilo para cada tarjeta */
+.tarjeta {
+  width: 250px;
+  height: 360px;
+  background: linear-gradient(to right, #A3B9D9, #D9E4F5);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin: 10px; /* Espacio entre las tarjetas */
+  box-sizing: border-box; 
+}
+
+.tarjeta img {
+  width: 100px;
+  height: 100px;
+  margin-left: 60px;
+ margin-top: -15px;
+  object-fit: contain;
+ 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+ .tarjeta img:hover {
+  transform: scale(1.5);
+  filter: brightness(1.2);
+}
+
+
+.tarjeta h3 {
+  font-size: 1.2rem;
+  text-align: center;
+ margin-top: 15px;
+}
+
+.tarjeta p {
+  font-size: 100%;
+  margin: 4px 0;
+}
+
+.tarjeta button {
+  background: linear-gradient(to right, #2094b1, #8cb8e7);
+  margin-left: 30px;
+margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
